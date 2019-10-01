@@ -1,0 +1,7 @@
+<div *ngIf="isNotEmptyList();else other_content">
+    <h3 *ngFor='let item of soldItems'>{{item.name}}</h3>
+</div>
+
+<ng-template #other_content>
+    <p>You don't buy product</p>
+</ng-template>
